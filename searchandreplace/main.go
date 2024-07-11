@@ -26,19 +26,21 @@ import (
 )
 
 func main() {
-	str1 := os.Args[1]
-	str2 := os.Args[2]
-	str3 := os.Args[3]
-	str := ""
-	for _, c := range str1 {
-		if string(c) == str2 {
-			str += str3
-		} else {
-			str += string(c)
-		}
+	if len(os.Args) != 3 {
+		return
 	}
-	for _, char := range str {
-		z01.PrintRune(char)
+
+	args1, args2, seen, exist := os.Args[1], os.Args[2], make(map[rune]bool), make(map[rune]bool)
+
+	for _, char := range args2 {
+		exist[char] = true
+	}
+
+	for _, char := range args1 {
+		if exist[char] && !seen[char] {
+			seen[char] = true
+			z01.PrintRune(char)
+		}
 	}
 	z01.PrintRune('\n')
 }
