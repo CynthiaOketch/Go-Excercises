@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func StrLen(s string) int {
 	var count int
 	for range s {
@@ -10,7 +8,7 @@ func StrLen(s string) int {
 	return count
 }
 
-/*func main() {
-	word := "school"
-	fmt.Println(StrLen(word))
-}
+// func main() {
+// 	word := "school"
+// 	fmt.Println(StrLen(word))
+// }

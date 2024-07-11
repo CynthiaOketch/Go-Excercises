@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func ToUpper(str string) string {
 	var newstring string
 	for _, c := range str {
@@ -15,7 +13,7 @@ func ToUpper(str string) string {
 	return newstring
 }
 
-/*func main() {
-	word := "Hello there ia am cynthia"
-	fmt.Println(ToUpper(word))
-}
+// func main() {
+// 	word := "Hello there ia am cynthia"
+// 	fmt.Println(ToUpper(word))
+// }

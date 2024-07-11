@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func ToLower(str string) string {
 	var newstr string
 	for _, char := range str {
@@ -15,7 +13,7 @@ func ToLower(str string) string {
 	return newstr
 }
 
-/*func main() {
-	word := "HELLo"
-	fmt.Println((ToLower(word)))
-}
+// func main() {
+// 	word := "HELLo"
+// 	fmt.Println((ToLower(word)))
+// }
