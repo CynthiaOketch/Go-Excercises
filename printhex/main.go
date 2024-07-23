@@ -18,3 +18,12 @@ $ go run .
 $ go run . "123 132 1" | cat -e
 ERROR$
 $
+package main
+
+import ()
+
+func main(){
+    if len(os.Args) != 2 {
+        return
+    }
+}
