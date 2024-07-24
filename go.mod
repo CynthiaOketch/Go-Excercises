@@ -1,5 +1,5 @@
-module Go-practice
+module go-excercises
 
-go 1.22.1
+go 1.18
 
 require github.com/01-edu/z01 v0.1.0
