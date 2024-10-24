@@ -51,14 +51,3 @@ func main() {
 
 	fmt.Println(result)
 }
-func SortWordArr(a []string) {
-	for i := 0; i < len(a); i++ {
-		for j := 0; j < len(a)-1; j++ {
-			if a[j] > a[j+1] {
-				a[j+1], a[j] = a[j], a[j+1]
-			}
-		}
-	}
-}
-=======
->>>>>>> 8625efdc3b50d2602a6f9a5913dce7b5c471e9f6
